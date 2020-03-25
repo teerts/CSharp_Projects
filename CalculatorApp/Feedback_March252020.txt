@@ -1,0 +1,9 @@
+Feedback: 
+
+1) Start function names with capitals and use CamelCase
+2) Common functions should not be repeated
+	- for example: the key inputs for 1-9 can use a switch statement instead of individual functions
+3) Setting a global variable that is used everywhere is not a good idea - hard to backtrack
+4) Controller does not use many partial classes
+
+

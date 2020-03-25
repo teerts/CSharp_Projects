@@ -1,0 +1,9 @@
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.pdb
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csprojResolveAssemblyReference.cache
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.Cache
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.exe
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.pdb
+c:\users\gobind\documents\visual studio 2015\Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
