@@ -1,4 +1,4 @@
-#Projects in this folder were created using the sites below:
+#Projects in this folder were created using the tutorial sites below:
 
 https://www.instructables.com/id/Creating-a-Calculator-Visual-Studio-C/ - Calculator
 
