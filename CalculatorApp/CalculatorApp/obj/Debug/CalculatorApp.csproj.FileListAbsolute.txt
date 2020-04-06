@@ -16,3 +16,12 @@ C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp Projects\Calculator
 C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
 C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
 C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.Cache
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe.config
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.exe
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.pdb
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.exe
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\bin\Debug\CalculatorApp.pdb
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csprojResolveAssemblyReference.cache
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Form1.resources
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.Properties.Resources.resources
+C:\Users\Gobind\Documents\Visual Studio 2015\Projects\CSharp_Projects\CalculatorApp\CalculatorApp\obj\Debug\CalculatorApp.csproj.GenerateResource.Cache
