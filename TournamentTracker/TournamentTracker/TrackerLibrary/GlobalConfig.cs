@@ -14,7 +14,6 @@ namespace TrackerLibrary
             // (database == true) is viable as well but we have a bool 
             if (db == DatabaseType.Sql)
             {
-                // TODO - Set up the SQL Connector properly
                 SqlConnector sql = new SqlConnector();
                 Connection= sql;
             }

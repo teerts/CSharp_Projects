@@ -12,7 +12,7 @@ namespace TrackerLibrary.DataAccess
     class SqlConnector : IDataConnection
     {
         /// <summary>
-        /// Saves a new prize to the database
+        /// Saves a new prize to the relational database
         /// </summary>
         /// <param name="model">The prize information.</param>
         /// <returns>the prize information, including the unique identifier.</returns>
