@@ -9,10 +9,10 @@ using TrackerLibrary.Models;
 
 // * load the text file
 // * convert the text to List<PrizeModel>
-// find the max id
-// add the new record wit the new id (max + 1)
-// convert the prizes to a list<string>
-// save the list <string> to the text file
+// * find the max id
+// * add the new record wit the new id (max + 1)
+// * convert the prizes to a list<string>
+// * save the list <string> to the text file
 // additional (not used here): Automapper allows for one object to be mapped to another
 
 namespace TrackerLibrary.DataAccess.TextHelpers
