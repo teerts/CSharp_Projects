@@ -12,6 +12,7 @@ namespace TrackerLibrary.DataAccess
     {
         private const string PrizesFile = "PrizeModels.csv";
         private const string PersonsFile = "PersonModels.csv";
+        private const string TeamFile = "TeamModels.csv";
         public PrizeModel CreatePrize(PrizeModel model)
         {
             // extension methods: only pull in namespaces of extension methods that we need
@@ -63,6 +64,30 @@ namespace TrackerLibrary.DataAccess
         public List<PersonModel> GetPerson_All()
         {
             return PersonsFile.FullFilePath().LoadFile().ConvertToPersonModels();
+        }
+
+        public TeamModel CreateTeam(TeamModel model)
+        {
+            // two parameters into ConvertToTeamModels: the first is actually the "LoadFile()" function while 
+            // the second is the persons file
+            List<TeamModel> teams = TeamFile.FullFilePath().LoadFile().ConvertToTeamModels(PersonsFile);
+
+            // find the max id
+            int currentId = 1;
+
+            if (teams.Count > 0)
+            {
+                currentId = teams.OrderByDescending(x => x.Id).First().Id + 1;
+            }
+
+            model.Id = currentId;
+
+            teams.Add(model);
+
+            teams.SaveToTeamFile(TeamFile);
+
+            return model;
+
         }
     }
 }
