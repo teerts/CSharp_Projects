@@ -20,46 +20,21 @@ namespace GenericsTutorial1
             var set1 = new HashSet<int> { 3, 6, 9, 12, 15 };
             var array1 = new[] { 4, 8, 12, 16, 20 };
 
-            int numOdd = 0; 
+            //// specify the type of item in <>; and then list the collections 
+            //var ec = new EnumerableCompositor<int> { list1, list2, set1, array1 };
 
-            foreach (var value in list1)
-            {
-                if(IsOdd(value))
-                {
-                    numOdd++;
-                }
-            }
+            //// loop thru all items in enumerable compositor
+            //int numOdd = 0;
 
-            foreach (var value in list2)
-            {
-                if (IsOdd(value))
-                {
-                    numOdd++;
-                }
-            }
+            //foreach(var value in ec)
+            //{
+            //    if (IsOdd(value))
+            //    {
+            //        numOdd++;
+            //    }
+            //}
 
-            foreach (var value in set1)
-            {
-                if (IsOdd(value))
-                {
-                    numOdd++;
-                }
-            }
-
-            foreach (var value in array1)
-            {
-                if (IsOdd(value))
-                {
-                    numOdd++;
-                }
-            }
-
-            int numOdd =
-                list1.Count(x => IsOdd(x)) +
-                list2.Count(x => IsOdd(x)) +
-                set1.Count(x => IsOdd(x)) +
-                array1.Count(x => IsOdd(x));
-
+            //int numOdd = ec.Count(x => IsOdd(x));
         }
     }
 }
