@@ -5,6 +5,20 @@ using System.Linq;
 
 namespace GenericsTutorial1
 {
+    static class EnumerableCompositor
+    {
+        // write a method that takes care of the instantiation for us -- this is known as a factory method
+        // create static method
+        // create method takes an array of collections 
+        // then passes it to the constructor  
+        // adding params keyword to pass in number of params       
+        public static EnumerableCompositor<T> ECCreate<T> (params IEnumerable<T>[] collections)
+        {
+            // return new instance of enumerable compositor with passed in collections
+            return new EnumerableCompositor<T>(collections);
+        }
+    }
+
     // composed of many collections but loop thru items contained as one collection
     // collections like these are said to be "enumerable"
 
