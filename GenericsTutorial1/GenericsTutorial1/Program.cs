@@ -31,6 +31,8 @@ namespace GenericsTutorial1
             // loop thru all items in enumerable compositor
             // can be used for any common collections
             int numOdd = ec.Count(x => IsOdd(x));
+
+            HashSet<int> set = ec.To<HashSet<int>>();
         }
     }
 }

@@ -74,5 +74,21 @@ namespace GenericsTutorial1
             // usually the return is just the generic implementation call
             return GetEnumerator();
         }
+
+        public TCollection To<TCollection>() where TCollection: ICollection<T>, new ()
+        {
+            // the new() constraint allows us to do this
+            var collection = new TCollection();
+
+            foreach (var item in this)
+            {
+                // could not call Add() if ICollection interface was not added
+                collection.Add(item);
+            }
+
+            return collection;
+            // use this collection to create a hashset all at once
+        }
+
     }
 }
