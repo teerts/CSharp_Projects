@@ -38,14 +38,27 @@ namespace GenericsTutorial1
         // generic implementation of the interface
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            // implement foreach loop
+            foreach (var collection in _collections)
+            {
+                foreach (var item in collection)
+                {
+                    // yield keyword: C Sharp needs to create a special enumerator object
+                    // the enum object is special as everytime movenext() is called until it reaches a yield return statement
+                    // it will then pause until getenumerator method is reached and movenext will return false (keeps looping)
+                    // yield kw will return IEnumerator or IEnumerable
+                    yield return item;
+                }
+            }
         }
 
         // non-generic explicitly implemented: no access modifier and accesses IEnumerable
         // return type is different therefore its explicitly cast 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            // this method is leftover from the old C# days where generics were not available
+            // usually the return is just the generic implementation call
+            return GetEnumerator();
         }
     }
 }

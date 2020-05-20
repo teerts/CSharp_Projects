@@ -26,25 +26,35 @@ namespace GenericsTutorial1
             // IF a item gets added to list1 then it will automatically get added to list1 in the Enumerable Compositor instance
             // composed of a bunch of enumerables; implements IEnumerable so we can use foreach loops to enumerate thru them
             // enumerators are sometimes called iterators
-            var ec = new EnumerableCompositor<int>(new IEnumerable<int>[]
+            var ec = new EnumerableCompositor<int> {list1, list2, set1, array1};
+
+
+            // loop thru all items in enumerable compositor
+            int numOdd = 0;
+
+            foreach (var value in ec)
             {
-                list1, list2, set1, array1
-            });
-            //// specify the type of item in <>; and then list the collections 
-            //var ec = new EnumerableCompositor<int> { list1, list2, set1, array1 };
-
-            //// loop thru all items in enumerable compositor
-            //int numOdd = 0;
-
-            //foreach(var value in ec)
-            //{
-            //    if (IsOdd(value))
-            //    {
-            //        numOdd++;
-            //    }
-            //}
+                if (IsOdd(value))
+                {
+                    numOdd++;
+                }
+            }
 
             //int numOdd = ec.Count(x => IsOdd(x));
+
+            // although the Take method has been called on this line
+            // the firstThree does not contain anything cause of Enumerators
+            // until the foreach loop runs that the body of the Take() method is executed
+            // this is true for all methods that use the yield keyword
+            // this is called Lazy Evaluation and the items in the collection are not retrieved until needed
+            // yield provides data just in time (JIT)
+            IEnumerable<int> firstThree = Utils.Take<int>(list1, 3);
+            
+            // loop thru first 3 in collection            
+            foreach (var item in firstThree)
+            {
+
+            }
         }
     }
 }
