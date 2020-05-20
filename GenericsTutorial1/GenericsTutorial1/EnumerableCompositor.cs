@@ -75,6 +75,7 @@ namespace GenericsTutorial1
             return GetEnumerator();
         }
 
+        // this method will allow converting the collection into any type of collection specified by generic parameter
         public TCollection To<TCollection>() where TCollection: ICollection<T>, new ()
         {
             // the new() constraint allows us to do this
